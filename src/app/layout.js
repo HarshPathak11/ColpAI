@@ -1,6 +1,14 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
+import { Jost } from 'next/font/google';
+
+const jost = Jost({
+  subsets: ['latin'], // Specify the subsets you need
+  weight: ['400', '700'], // Specify the weights you intend to use
+  display: 'swap', // Use 'swap' to ensure text is displayed immediately
+});
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
