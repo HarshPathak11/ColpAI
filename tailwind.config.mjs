@@ -11,6 +11,10 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        // Or define a custom font family
+        jost: ['Jost', 'sans-serif'],
+      },
     },
   },
   plugins: [],
