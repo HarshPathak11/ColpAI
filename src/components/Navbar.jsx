@@ -67,17 +67,17 @@ const Navbar = () => {
               </Link>
             </li>
             <li className="hover:text-gray-300 transition">
-              <Link href="/contact" onClick={() => setIsOpen(false)}>
+              <Link href="/" onClick={() => setIsOpen(false)}>
                 Contact Us
               </Link>
             </li>
             <li className="hover:text-gray-300 transition">
-              <Link href="/help" onClick={() => setIsOpen(false)}>
+              <Link href="/" onClick={() => setIsOpen(false)}>
                 Help
               </Link>
             </li>
             <li className="hover:text-gray-300 transition">
-              <Link href="/more-info" onClick={() => setIsOpen(false)}>
+              <Link href="/" onClick={() => setIsOpen(false)}>
                 More Info
               </Link>
             </li>
