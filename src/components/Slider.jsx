@@ -176,12 +176,12 @@ export default function Slider() {
         ))}
         {/* Custom Navigation Arrows */}
         <button
-          className="customPrev absolute top-1/2 left-4 transform -translate-y-1/2 z-10 w-10 h-10 rounded-full border border-white flex items-center justify-center hover:bg-white hover:text-black transition-colors"
+          className="customPrev hidden absolute top-1/2 left-4 transform -translate-y-1/2 z-10 w-10 h-10 rounded-full border border-white md:flex items-center justify-center hover:bg-white hover:text-black transition-colors"
         >
           &lsaquo;
         </button>
         <button
-          className="customNext absolute top-1/2 right-4 transform -translate-y-1/2 z-10 w-10 h-10 rounded-full border border-white flex items-center justify-center hover:bg-white hover:text-black transition-colors"
+          className="customNext hidden absolute top-1/2 right-4 transform -translate-y-1/2 z-10 w-10 h-10 rounded-full border border-white md:flex items-center justify-center hover:bg-white hover:text-black transition-colors"
         >
           &rsaquo;
         </button>
