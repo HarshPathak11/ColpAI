@@ -7,7 +7,7 @@ export default function MapAndFooter() {
       <section className="relative w-full h-[450px]">
         <iframe
           title="Our Location"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14247.814616179946!2d80.32526824501041!3d26.486492845863366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399c3865e63e7bc1%3A0x1719b21a71bf62e8!2sHBTU%20East%20Campus%2C%20Nawabganj%2C%20Kanpur%2C%20Uttar%20Pradesh%20208002!5e0!3m2!1sen!2sin!4v1677078789016!5m2!1sen!2sin"
+          src="https://www.google.com/maps?q=26.493714,80.3102051&hl=en&z=15&output=embed"
         // src = "src=""
         className="w-full h-full border-0"
           allowFullScreen=""
