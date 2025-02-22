@@ -5,6 +5,8 @@ import MapAndFooter from '@/components/Footer';
 import ContactUsSection from '@/components/ContactUs';
 import CompanyShowcase from '@/components/BasicComponent';
 import ChatWidget from "@/components/ChatSupport";
+import CervicalCancerPage from "@/components/Information";
+import TeamSection from "@/components/Team";
 export default function Home() {
   return (
     <main className="min-h-screen grainy-dark">
@@ -61,10 +63,11 @@ export default function Home() {
           </div>
         </section> */}
 
-    
-
         
+
+        <CervicalCancerPage/>
         <CompanyShowcase />
+        <TeamSection/>
         <ContactUsSection />
         <MapAndFooter />
         <ChatWidget/>

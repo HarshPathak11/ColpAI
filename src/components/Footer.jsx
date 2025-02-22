@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function MapAndFooter() {
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col ">
       {/* Map Section */}
       <section className="relative w-full h-[450px]">
         <iframe
@@ -26,19 +26,6 @@ export default function MapAndFooter() {
           </a>
         </div>
       </section>
-
-      {/* Footer */}
-      <footer className="mt-auto bg-black text-white py-4">
-        <div className="max-w-7xl mx-auto px-4 flex flex-col items-center justify-center">
-          <p className="text-sm">
-            Copyright © 2025 <span className="font-semibold">ColpAI</span>.
-            All Rights Reserved.
-          </p>
-          <p className="text-sm mt-1">
-            Powered by <span className="font-semibold">GoDaddy</span>
-          </p>
-        </div>
-      </footer>
     </div>
   );
 }

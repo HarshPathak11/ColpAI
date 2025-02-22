@@ -4,9 +4,9 @@ import { FaWhatsapp } from 'react-icons/fa';
 
 export default function ContactUsSection() {
   return (
-    <section className="py-10 px-4 md:px-8 bg-white rounded-lg shadow-md font-jost">
+    <section className="py-10 px-4 md:px-12 bg-white rounded-lg shadow-md font-jost">
       {/* Heading */}
-      <h2 className="text-3xl font-bold text-gray-800 text-center">Contact Us</h2>
+      {/* <h2 className="text-3xl font-bold text-gray-800 text-center">Contact Us</h2> */}
 
       {/* Content Row */}
       <div className="mt-8 flex flex-col md:flex-row gap-8 items-start">
@@ -20,13 +20,12 @@ export default function ContactUsSection() {
           </p>
 
           <a
-            icon={<FaWhatsapp />}
             href="https://wa.me/917905194574"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block mt-4 px-6 py-2 bg-blue-800 text-white rounded-lg hover:bg-blue transition-colors"
+            className="inline-block mt-4 px-6 py-2 bg-gray-600 text-white rounded-lg hover:bg-gray-900 transition-colors"
           >
-            Message us on WhatsApp
+            Message us on WhatsApp {<FaWhatsapp className='inline w-6 h-6 md:ml-1 ' fill='#10f427'/>}
           </a>
 
           <div className="mt-6 text-gray-700">

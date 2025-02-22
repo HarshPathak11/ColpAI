@@ -1,14 +1,16 @@
 // app/components/HeaderBanner.tsx (or .jsx)
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function HeaderBanner() {
   return (
     <header className="w-full font-jost">
       {/* Top Bar */}
-      <div className="bg-[#BCE5F3] text-black text-center py-2 text-sm md:text-base">
+      <Link href="https://tanprishdynamics-r5ps632.gamma.site/"><div className="bg-[#BCE5F3] text-black text-center py-2 text-sm md:text-base">
         To Learn More About HPV and Cervical Cancer
       </div>
+      </Link>
 
       {/* Main Banner */}
       <div className="relative w-full min-h-[450px] md:min-h-[550px] flex flex-col items-center justify-center bg-white overflow-hidden text-black">
