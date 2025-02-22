@@ -1,44 +1,81 @@
-import React from 'react';
+import { FaFacebookF, FaTwitter, FaGooglePlusG, FaYoutube, FaInstagram, FaLinkedinIn, FaVk } from "react-icons/fa";
 
-export default function MapAndFooter() {
+export default function Footer() {
   return (
-    <div className="flex flex-col min-h-screen">
-      {/* Map Section */}
-      <section className="relative w-full h-[450px]">
-        <iframe
-          title="Our Location"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14247.814616179946!2d80.32526824501041!3d26.486492845863366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399c3865e63e7bc1%3A0x1719b21a71bf62e8!2sHBTU%20East%20Campus%2C%20Nawabganj%2C%20Kanpur%2C%20Uttar%20Pradesh%20208002!5e0!3m2!1sen!2sin!4v1677078789016!5m2!1sen!2sin"
-        // src = "src=""
-        className="w-full h-full border-0"
-          allowFullScreen=""
-          loading="lazy"
-          referrerPolicy="no-referrer-when-downgrade"
-        />
-        {/* Get Directions Button */}
-        <div className="absolute top-4 left-4">
-          <a
-            href="https://www.google.com/maps/dir/?api=1&destination=HBTU+East+Campus%2C+Nawabganj%2C+Kanpur%2C+Uttar+Pradesh+208002"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block bg-white text-gray-700 font-semibold py-2 px-4 rounded shadow-md hover:bg-gray-100"
-          >
-            Get directions
-          </a>
+    <footer className="bg-black text-white py-10">
+      <div className="max-w-7xl mx-auto px-4">
+        {/* Social Icons */}
+        <div className="flex justify-center space-x-6 mb-6">
+          {[FaFacebookF, FaTwitter, FaGooglePlusG, FaYoutube, FaInstagram, FaLinkedinIn, FaVk].map((Icon, index) => (
+            <a key={index} href="#" className="text-gray-400 hover:text-white text-2xl border-2 border-gray-500 p-2 rounded-full transition">
+              <Icon />
+            </a>
+          ))}
         </div>
-      </section>
 
-      {/* Footer */}
-      <footer className="mt-auto bg-black text-white py-4">
-        <div className="max-w-7xl mx-auto px-4 flex flex-col items-center justify-center">
-          <p className="text-sm">
-            Copyright © 2025 <span className="font-semibold">ColpAI</span>.
-            All Rights Reserved.
-          </p>
-          <p className="text-sm mt-1">
-            Powered by <span className="font-semibold">GoDaddy</span>
-          </p>
+        {/* Footer Links */}
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-6 text-sm text-gray-300">
+          <div>
+            <h3 className="font-semibold text-white mb-2">ColpAI</h3>
+            <ul>
+              <li><a href="#" className="hover:text-white">Teardown</a></li>
+              <li><a href="#" className="hover:text-white">News</a></li>
+              <li><a href="#" className="hover:text-white">Partners</a></li>
+              <li><a href="#" className="hover:text-white">About Us</a></li>
+              <li><a href="#" className="hover:text-white">Contact Us</a></li>
+              <li><a href="#" className="hover:text-white">Terms of Use</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 className="font-semibold text-white mb-2">Social</h3>
+            <ul>
+              <li><a href="#" className="hover:text-white">Facebook</a></li>
+              <li><a href="#" className="hover:text-white">Twitter</a></li>
+              <li><a href="#" className="hover:text-white">YouTube</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 className="font-semibold text-white mb-2">Service</h3>
+            <ul>
+              <li><a href="#" className="hover:text-white">Compare</a></li>
+              <li><a href="#" className="hover:text-white">Download</a></li>
+              <li><a href="#" className="hover:text-white">Feedback</a></li>
+              <li><a href="#" className="hover:text-white">Bug Report</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 className="font-semibold text-white mb-2">Activity</h3>
+            <ul>
+              <li><a href="#" className="hover:text-white">Influencers</a></li>
+              <li><a href="#" className="hover:text-white">Affiliate</a></li>
+              <li><a href="#" className="hover:text-white">Co-branding</a></li>
+              <li><a href="#" className="hover:text-white">Honor</a></li>
+              <li><a href="#" className="hover:text-white">Giveaway</a></li>
+            </ul>
+          </div>
         </div>
-      </footer>
-    </div>
+
+        {/* Newsletter Subscription */}
+        <div className="mt-8 flex flex-col md:flex-row justify-between items-center border-t border-gray-700 pt-6">
+          <p className="text-sm text-gray-400">Subscribe to our newsletter</p>
+          <div className="flex mt-3 md:mt-0">
+            <input
+              type="email"
+              placeholder="Enter your email"
+              className="px-4 py-2 bg-gray-800 text-white rounded-l-lg outline-none border border-gray-600"
+            />
+            <button className="px-4 py-2 bg-orange-500 text-white rounded-r-lg hover:bg-orange-600">Subscribe</button>
+          </div>
+        </div>
+
+        {/* Copyright */}
+        <div className="text-center text-gray-500 text-sm mt-6">
+          <p>Copyright © 2025 <span className="font-semibold">ColpAI</span>. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
   );
 }

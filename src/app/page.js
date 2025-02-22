@@ -1,7 +1,8 @@
 import Image from 'next/image';
-import MapAndFooter from '@/components/Footer';
+import MapAndFooter from '@/components/Map';
 import ContactUsSection from '@/components/ContactUs';
 import CompanyShowcase from '@/components/BasicComponent';
+import Footer from '@/components/Footer';
 export default function Home() {
   return (
     <main className="min-h-screen bg-gray-50">
@@ -62,6 +63,7 @@ export default function Home() {
         <CompanyShowcase />
         <ContactUsSection />
         <MapAndFooter />
+        <Footer/>
       </div>
     </main>
   );

@@ -20,13 +20,14 @@ export default function ContactUsSection() {
           </p>
 
           <a
-            icon={<FaWhatsapp />}
+            // icon={<FaWhatsapp />}
             href="https://wa.me/917905194574"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block mt-4 px-6 py-2 bg-blue-800 text-white rounded-lg hover:bg-blue transition-colors"
+            className="inline-block mt-4 px-6 py-2 bg-blue-800 text-white rounded-full hover:bg-blue transition-colors"
           >
             Message us on WhatsApp
+            <FaWhatsapp className="inline-block ml-2 " />
           </a>
 
           <div className="mt-6 text-gray-700">
