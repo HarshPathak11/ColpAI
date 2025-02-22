@@ -5,13 +5,14 @@ import MapAndFooter from '@/components/Map';
 import ContactUsSection from '@/components/ContactUs';
 import CompanyShowcase from '@/components/BasicComponent';
 import Footer from '@/components/Footer';
+import ChatWidget from "@/components/ChatWidget";
 export default function Home() {
   return (
     <main className="min-h-screen bg-gray-50">
     <HeaderBanner/>
     <Slider/>
       {/* Container */}
-      <div className="max-w-7xl mx-auto px-4 py-8 sm:px-6 lg:px-8">
+      <div className="w-full mx-auto px-4 py-8 sm:px-6 lg:px-8">
         
     
 
@@ -67,6 +68,7 @@ export default function Home() {
         <CompanyShowcase />
         <ContactUsSection />
         <MapAndFooter />
+        <ChatWidget />
         <Footer/>
       </div>
     </main>
