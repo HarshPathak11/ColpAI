@@ -4,7 +4,7 @@ import { FaWhatsapp } from 'react-icons/fa';
 
 export default function ContactUsSection() {
   return (
-    <section className="py-10 px-4 md:px-8 bg-white rounded-lg shadow-md">
+    <section className="py-10 px-4 md:px-8 bg-white rounded-lg shadow-md font-jost">
       {/* Heading */}
       <h2 className="text-3xl font-bold text-gray-800 text-center">Contact Us</h2>
 

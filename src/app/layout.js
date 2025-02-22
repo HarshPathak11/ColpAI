@@ -2,6 +2,8 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
 import { Jost } from 'next/font/google';
+import Navbar from "@/components/Navbar";
+import TopHeader from "@/components/Top";
 
 const jost = Jost({
   subsets: ['latin'], // Specify the subsets you need
@@ -28,8 +30,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased `}
       >
+      <TopHeader/>
+      <Navbar/>
         {children}
       </body>
     </html>

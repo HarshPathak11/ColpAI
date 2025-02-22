@@ -4,9 +4,10 @@ import Image from 'next/image';
 import MapAndFooter from '@/components/Footer';
 import ContactUsSection from '@/components/ContactUs';
 import CompanyShowcase from '@/components/BasicComponent';
+import ChatWidget from "@/components/ChatSupport";
 export default function Home() {
   return (
-    <main className="min-h-screen bg-gray-50">
+    <main className="min-h-screen grainy-dark">
     <HeaderBanner/>
     <Slider/>
       {/* Container */}
@@ -66,6 +67,7 @@ export default function Home() {
         <CompanyShowcase />
         <ContactUsSection />
         <MapAndFooter />
+        <ChatWidget/>
       </div>
     </main>
   );
