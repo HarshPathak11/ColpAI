@@ -268,7 +268,7 @@ const TopHeader = () => {
       >
         {/* 1) Main Logo Section */}
         <div className="flex justify-center md:justify-start">
-          <Image
+          {/* <Image
             src="/topcop.png"
             alt="Company/University Name"
             width={500}
@@ -278,6 +278,30 @@ const TopHeader = () => {
               w-[200px] 
               sm:w-[300px] 
               md:w-[400px]
+            "
+          /> */}
+          <Image
+            src="/blob.png"
+            alt="Company/University Name"
+            width={500}
+            height={100}
+            className="
+              object-contain
+              w-[30px] 
+              sm:w-[50px] 
+              md:w-[60px]
+            "
+          />
+          <Image
+            src="/cmp.png"
+            alt="Company/University Name"
+            width={500}
+            height={100}
+            className="
+              object-contain
+              w-[100px] 
+              sm:w-[150px] 
+              md:w-[370px]
             "
           />
         </div>

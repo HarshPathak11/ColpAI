@@ -135,7 +135,7 @@ export default function CervicalCancerPage() {
 
       {/* 4) HOW COLPAI SOLVES THE PROBLEM */}
       <motion.section
-        className="p-6 md:p-12 lg:p-16 bg-white"
+        className="p-4 md:p-8 lg:p-12 bg-white"
         initial={{ opacity: 0, y: -50 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.2 }}
@@ -144,7 +144,7 @@ export default function CervicalCancerPage() {
         <h2 className="text-3xl md:text-4xl font-bold text-blue-600 mb-4 text-center">
           How ColpAI Assists
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-1 gap-8 items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           {/* Left: Text */}
           <div className="text-gray-800 leading-relaxed order-2 md:order-1">
             <p className="text-lg mb-4">
@@ -169,6 +169,15 @@ export default function CervicalCancerPage() {
             </div>
           </div>
           {/* Right: Image */}
+          <div className="relative w-full h-auto order-1 md:order-2 flex justify-center items-center">
+            <Image
+              src="/colpAI-removebg-preview.png" // replace with actual image
+              alt="ColpAI"
+              width={300}
+              height={200}
+              className="w-72 h-auto object-cover rounded-lg "
+            />
+          </div>
         </div>
       </motion.section>
     </div>

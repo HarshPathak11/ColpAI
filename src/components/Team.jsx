@@ -10,13 +10,13 @@ export default function TeamSection() {
   const teamMembers = [
     {
       name: "Abhay Dwivedi",
-      role: "C.T.O. / M.D. and Co-Founder (49%)",
+      role: "C.T.O. / M.D. and Co-Founder",
       functions: "Technology & AI Development, Financial Oversight",
       image: "/dunno.png", // placeholder image path
     },
     {
       name: "Anamika Mishra Pandey",
-      role: "C.E.O. / Director and Co-Founder (51%)",
+      role: "C.E.O. / Director and Co-Founder",
       functions: "Operation Management, Partnerships & Fundraising",
       image: "/anamika.png", // placeholder image path
     },

@@ -78,7 +78,7 @@ export default function Footer() {
         <div className="text-center text-gray-500 text-sm mt-6">
           <p>
             Copyright © 2025
-            <span className="font-semibold"> ColpAI</span>. All Rights Reserved.
+            <span className="font-semibold"> TanPrish Dynamics</span>. All Rights Reserved.
           </p>
         </div>
       </div>

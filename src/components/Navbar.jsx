@@ -9,16 +9,16 @@ const Navbar = () => {
 
   return (
     <nav className="bg-black text-white font-jost">
-      <div className="mx-auto max-w-7xl px-4 py-3 flex items-center justify-between">
+      <div className="mx-auto max-w-7xl px-4 py-3 flex items-center justify-end">
         {/* Left side: Logo + Company Name */}
-        <div className="flex items-center gap-2">
-          {/* Replace with your logo path and sizes */}
+        {/* <div className="flex items-center gap-2">
+          
           <Image src="/blob.png" alt="Logo" width={40} height={40} />
           <span className="text-xl font-bold tracking-wide">TanPrish Dynamics</span>
-        </div>
+        </div> */}
 
         {/* Desktop Nav Items */}
-        <ul className="hidden md:flex space-x-6 text-sm lg:text-base font-medium">
+        <ul className="hidden md:flex space-x-10 text-sm lg:text-base font-medium ">
           <li className="hover:text-gray-300 transition">
             <Link href="/">Home</Link>
           </li>
